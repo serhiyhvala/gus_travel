@@ -6,3 +6,131 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 37px;
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  width: 33px;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 47px;
+  font-family: var(--buduj-sans);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.menu > li {
+  cursor: pointer;
+  position: relative;
+}
+
+.menu > li:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--yellow);
+}
+
+.account > img {
+  width: 28px;
+  height: 28px;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile > img {
+  width: 20px;
+  height: 14px;
+}
+
+.background {
+  background-image: url("../assets/hero.png");
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  position: relative;
+  margin-top: 184px;
+  padding-top: 106px;
+  border-top: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 230px;
+}
+
+.hero_title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 900;
+  font-family: var(--buduj-sans);
+  font-size: 75px;
+  letter-spacing: 5px;
+}
+
+.button {
+  align-self: center;
+  padding: 20px 35px;
+  border-radius: 50px;
+  background-color: var(--yellow);
+  border: none;
+  cursor: pointer;
+  font-family: var(--e-ukraine);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .menu,
+  .account {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .background {
+    background-image: url("../assets/mobile-hero.jpeg");
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .hero_title {
+    color: #fff;
+    font-size: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
