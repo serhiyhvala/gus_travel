@@ -1,0 +1,12 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --yellow: #fee45c;
+  --gray: #3c3c3c;
+  --transparent-gray: rgba(235, 235, 235, 0.2);
+
+  --container: 1470px;
+
+  --e-ukraine: "E-Ukraine";
+  --buduj-sans: "Buduj Sans";
+}

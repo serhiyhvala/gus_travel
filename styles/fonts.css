@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Buduj Sans";
+  src: url("../fonts/BudujSansTRIAL-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Buduj Sans";
+  src: url("../fonts/BudujSansTRIAL-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Buduj Sans";
+  src: url("../fonts/BudujSansTRIAL-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "E-Ukraine";
+  src: url("../fonts/e-Ukraine-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "E-Ukraine";
+  src: url("../fonts/e-Ukraine-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "E-Ukraine";
+  src: url("../fonts/e-Ukraine-Regular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
