@@ -15,6 +15,15 @@
 
 .main {
   height: 100vh;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -71,19 +80,9 @@
   height: 14px;
 }
 
-.background {
-  background-image: url("../assets/hero.png");
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .hero {
   position: relative;
-  margin-top: 184px;
+  margin-top: 150px;
   padding-top: 106px;
   border-top: 1px solid var(--black);
   display: flex;
@@ -149,20 +148,33 @@
   font-weight: 300;
   font-family: var(--e-ukraine);
   line-height: 34px;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
 }
 
 .feedback {
   width: 100%;
   height: 100%;
   padding: 90px 0;
-  background-color: var(--gray);
+  position: relative;
+}
+
+.feedback_background {
+  inset: 0;
+  position: absolute;
+  background-image: radial-gradient(
+      177.49% 111.09% at 43.27% 98.63%,
+      rgba(27, 21, 21, 0.62) 0%,
+      rgba(38, 35, 35, 0) 100%
+    ),
+    url(../assets/footer.png);
+  background-size: cover;
 }
 
 .feedback_form {
   display: flex;
   flex-direction: column;
   gap: 88px;
+  position: relative;
 }
 
 .feedback_form > h2 {
@@ -323,6 +335,10 @@ a {
     background-image: url("../assets/mobile-hero.jpeg");
   }
 
+  .footer_logo {
+    margin: 0;
+  }
+
   .info_list,
   .social,
   .rights {
@@ -346,5 +362,11 @@ a {
 
   .feedback_form > h2 {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero_title {
+    letter-spacing: 0;
   }
 }
