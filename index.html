@@ -22,9 +22,9 @@
             <li>Галерея</li>
             <li>Контакти</li>
           </ul>
-          <div class="menu-mobile">
+          <button class="menu-mobile" onclick="handleMobileMenu()">
             <img src="./assets/icons/menu-mobile.svg" alt="Mobile Menu" />
-          </div>
+          </button>
         </nav>
         <a href="/" class="account">
           <img src="./assets/icons/account.png" alt="Account Icon" />
@@ -36,6 +36,23 @@
           <span>туристична</span>
         </div>
         <button class="button">Дізнатися більше</button>
+      </div>
+    </div>
+    <div class="mobile_menu hidden">
+      <div>
+        <img
+          class="close_icon"
+          src="./assets/icons/close.svg"
+          alt=""
+          onclick="handleMobileMenu()"
+        />
+        <ul class="mobile_menu-list">
+          <li onclick="handleMobileMenu()">Головна</li>
+          <li onclick="handleMobileMenu()">Про проєкт</li>
+          <li onclick="handleMobileMenu()">Місця</li>
+          <li onclick="handleMobileMenu()">Галерея</li>
+          <li onclick="handleMobileMenu()">Контакти</li>
+        </ul>
       </div>
     </div>
     <div class="container about">
@@ -124,5 +141,7 @@
         >
       </div>
     </footer>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
