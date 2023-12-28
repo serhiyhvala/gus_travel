@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="uk-UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Гусятинщина туристична</title>
+    <link rel="stylesheet" href="./styles/places.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="background"></div>
+      <header class="container header">
+        <a href="/">
+          <img src="./assets/icons/logo.png" class="logo" alt="Logo Image" />
+        </a>
+        <nav>
+          <ul class="menu">
+            <li><a href="/">Головна</a></li>
+            <li><a href="/#about">Про проєкт</a></li>
+            <li><a href="places.html">Місця</a></li>
+            <li><a href="/#gallery">Галерея</a></li>
+            <li><a href="/#contacts">Контакти</a></li>
+          </ul>
+          <button class="menu-mobile" onclick="handleMobileMenu()">
+            <img src="./assets/icons/menu-mobile.svg" alt="Mobile Menu" />
+          </button>
+        </nav>
+        <a href="/" class="account">
+          <img src="./assets/icons/account.png" alt="Account Icon" />
+        </a>
+      </header>
+      <div class="container hero">
+        <div class="hero_info">
+          <span>Гусятинщина туристична</span>
+          <p>
+            Збудована орієнтовно на початку XVII ст. Є найцікавішою пам'яткою
+            Гусятина, що збереглася до наших днів.
+          </p>
+        </div>
+        <a href="/#feedback">
+          <button class="button">Залишити відгук</button>
+        </a>
+      </div>
+    </div>
+    <div class="mobile_menu hidden">
+      <div>
+        <img
+          class="close_icon"
+          src="./assets/icons/close.svg"
+          alt=""
+          onclick="handleMobileMenu()"
+        />
+        <ul class="mobile_menu-list">
+          <li onclick="handleMobileMenu()"><a href="/">Головна</a></li>
+          <li onclick="handleMobileMenu()"><a href="/#about">Про проєкт</a></li>
+          <li onclick="handleMobileMenu()">
+            <a href="places.html">Місця</a>
+          </li>
+          <li onclick="handleMobileMenu()"><a href=/#gallery>Галерея</a></li>
+          <li onclick="handleMobileMenu()"><a href="/#contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="places container">
+      <ul class="place_tabs">
+        <li class="active">Історія</li>
+        <li>Галерея</li>
+        <li>Відгуки</li>
+        <li>Локація</li>
+      </ul>
+      <div class="place_content">
+        <div class="place_image">
+          <img src="./assets/museum.png" alt="Museum" />
+          <p>
+            Межа XVI – XVII століть – час бурхливих воєн і повстань, коли землі
+            Галичини, переходячи з рук в руки, були розмінною монетою у
+            військово-економічних союзах і конфронтаціях. Тому кожен великий
+            архітектурний об’єкт, будь то релігійний центр чи магнатська
+            резиденція, зводився як ланка єдиного ланцюга міських оборонних
+            споруд з усіма витікаючими з цього архітектурними особливостями.
+          </p>
+        </div>
+        <p>
+          Синагога в центрі Гусятина – селищі міського типу однойменного району,
+          а колись міста з магдебурзьким правом (з 1559 року) – не була
+          винятком. Створена в кінці XVI століття за сприяння роду Калиновських,
+          вона служила релігійним і культурним центром єврейської громади міста,
+          що сягала трьох тисяч осіб, інтереси якої і була покликана захищати,
+          виступаючи в якості самостійного оборонного центру в разі прориву
+          міської оборони.
+        </p>
+        <p>
+          Зараз Синагога занепадає, двері її розкриті всім вітрам, а склепіння –
+          дощам та снігам, крім того, внутрішні приміщення притягують варварів,
+          які прагнуть привнести свою лепту в руйнування пам’ятника.
+        </p>
+      </div>
+    </div>
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <div class="info">
+          <div class="footer_logo">
+            <img src="./assets/icons/logo.png" alt="" />
+            <div>
+              <span>Гусятинщина</span>
+              <span>туристична</span>
+            </div>
+          </div>
+          <div class="info_list">
+            <ul>
+              <li>Головна</li>
+              <li>Про проєкт</li>
+              <li>Місця</li>
+              <li>Галерея</li>
+            </ul>
+            <ul>
+              <li>Контакти</li>
+              <li>
+                <a href="mailto:gusiatyntravel@gmail.com"
+                  >gusiatyntravel@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+380664052588">+38 (066) 405 25 88</a></li>
+              <li><a href="tel:+380683853371">+38 (068) 385 33 71</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="social">
+          <li>
+            <a href="#"
+              ><img
+                class="social_icon"
+                src="./assets/icons/instagram.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="social_icon" src="./assets/icons/youtube.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="social_icon"
+                src="./assets/icons/facebook.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+        <span class="rights"
+          >Усі права захищено 2023 | Розробка Юрій Мушій</span
+        >
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
