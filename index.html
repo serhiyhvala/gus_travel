@@ -16,11 +16,11 @@
         </a>
         <nav>
           <ul class="menu">
-            <li>Головна</li>
-            <li>Про проєкт</li>
-            <li>Місця</li>
-            <li>Галерея</li>
-            <li>Контакти</li>
+            <li><a href="">Головна</a></li>
+            <li><a href="#about">Про проєкт</a></li>
+            <li><a href="places.html">Місця</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#contacts">Контакти</a></li>
           </ul>
           <button class="menu-mobile" onclick="handleMobileMenu()">
             <img src="./assets/icons/menu-mobile.svg" alt="Mobile Menu" />
@@ -47,15 +47,17 @@
           onclick="handleMobileMenu()"
         />
         <ul class="mobile_menu-list">
-          <li onclick="handleMobileMenu()">Головна</li>
-          <li onclick="handleMobileMenu()">Про проєкт</li>
-          <li onclick="handleMobileMenu()">Місця</li>
-          <li onclick="handleMobileMenu()">Галерея</li>
-          <li onclick="handleMobileMenu()">Контакти</li>
+          <li onclick="handleMobileMenu()"><a>Головна</a></li>
+          <li onclick="handleMobileMenu()"><a href="#about">Про проєкт</a></li>
+          <li onclick="handleMobileMenu()">
+            <a href="places.html">Місця</a>
+          </li>
+          <li onclick="handleMobileMenu()"><a href="#">Галерея</a></li>
+          <li onclick="handleMobileMenu()"><a href="#contacts">Контакти</a></li>
         </ul>
       </div>
     </div>
-    <div class="container about">
+    <div class="container about" id="about">
       <h2>Про проєкт</h2>
       <div class="map">
         <img src="./assets/map.jpeg" alt="Map" />
@@ -69,11 +71,13 @@
             знаходиться на сході Тернопільщини на правому березі річки Збруч -
             ментального кордону між заходом і сходом.</span
           >
-          <button class="button">Залишити відгук</button>
+          <a href="#feedback">
+            <button class="button">Залишити відгук</button>
+          </a>
         </div>
       </div>
     </div>
-    <div class="feedback">
+    <div class="feedback" id="feedback">
       <div class="feedback_background"></div>
       <div class="container feedback_form">
         <h2>Залишити відгук</h2>
@@ -84,7 +88,7 @@
         </form>
       </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="info">
           <div class="footer_logo">

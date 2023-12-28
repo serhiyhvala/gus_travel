@@ -8,6 +8,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
 }
@@ -56,12 +60,12 @@ body {
   margin-bottom: 2px;
 }
 
-.menu > li {
-  cursor: pointer;
+.menu > li > a {
   position: relative;
+  color: var(--black);
 }
 
-.menu > li:hover:after {
+.menu > li > a:hover:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -160,6 +164,10 @@ button {
   font-family: var(--buduj-sans);
   gap: 10px;
   font-size: 18px;
+}
+
+.mobile_menu-list > li > a {
+  color: var(--black);
 }
 
 .hidden {
