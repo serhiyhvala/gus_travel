@@ -393,6 +393,38 @@ button {
   left: 40% !important;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 90px;
+}
+
+.gallery > h2 {
+  font-family: var(--buduj-sans);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+}
+
+.gallery-container > img {
+  min-width: 264px;
+  min-height: 278px;
+  object-fit: cover;
+}
+
+.test {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+}
+
 .feedback {
   width: 100%;
   height: 100%;

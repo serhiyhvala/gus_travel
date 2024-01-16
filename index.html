@@ -177,6 +177,21 @@
         </div>
       </div>
     </div>
+    <div class="container gallery">
+      <h2>Галерея</h2>
+      <div class="gallery-container">
+        <img src="./assets/gallery/chagary.png" alt="" />
+        <img src="./assets/gallery/church.png" alt="" />
+        <img src="./assets/gallery/castle.png" alt="" />
+        <img src="./assets/gallery/gallery2.png" alt="" />
+        <img src="./assets/gallery/gallery3.png" alt="" />
+        <img src="./assets/gallery/chagary.png" alt="" />
+        <img src="./assets/gallery/church.png" alt="" />
+        <img src="./assets/gallery/castle.png" alt="" />
+        <img src="./assets/gallery/gallery2.png" alt="" />
+        <img src="./assets/gallery/gallery3.png" alt="" />
+      </div>
+    </div>
     <div class="feedback" id="feedback">
       <div class="feedback_background"></div>
       <div class="container feedback_form">
@@ -247,11 +262,7 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
-
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
       let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
@@ -266,14 +277,32 @@
         },
         breakpoints: {
           320: {
-            slidesPerView: 1
+            slidesPerView: 1,
           },
           768: {
             slidesPerView: 2,
           },
           1440: {
-            slidesPerView: 3
-          }
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      const placesSwiper = new Swiper(".gallerySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     </script>
