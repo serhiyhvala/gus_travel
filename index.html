@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Гусятинщина туристична</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="main">
@@ -99,6 +103,80 @@
         </li>
       </ul>
     </div>
+    <div class="container places">
+      <h2>Місця</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="place-container place-1">
+              <h4>Гусятинська синагога</h4>
+              <span
+                >Збудована орієнтовно на початку XVII ст. Є найцікавішою
+                пам'яткою Гусятина, що збереглася до наших днів.</span
+              >
+            </div>
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="place-container place-2">
+              <h4>Гусятинська синагога</h4>
+              <span
+                >Збудована орієнтовно на початку XVII ст. Є найцікавішою
+                пам'яткою Гусятина, що збереглася до наших днів.</span
+              >
+            </div>
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="place-container place-3">
+              <h4>Гусятинська синагога</h4>
+              <span
+                >Збудована орієнтовно на початку XVII ст. Є найцікавішою
+                пам'яткою Гусятина, що збереглася до наших днів.</span
+              >
+            </div>
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="place-container place-1">
+              <h4>Гусятинська синагога</h4>
+              <span
+                >Збудована орієнтовно на початку XVII ст. Є найцікавішою
+                пам'яткою Гусятина, що збереглася до наших днів.</span
+              >
+            </div>
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="place-container place-2">
+              <h4>Гусятинська синагога</h4>
+              <span
+                >Збудована орієнтовно на початку XVII ст. Є найцікавішою
+                пам'яткою Гусятина, що збереглася до наших днів.</span
+              >
+            </div>
+            <a href="#">Детальніше</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="place-container place-3">
+              <h4>Гусятинська синагога</h4>
+              <span
+                >Збудована орієнтовно на початку XVII ст. Є найцікавішою
+                пам'яткою Гусятина, що збереглася до наших днів.</span
+              >
+            </div>
+            <a href="#">Детальніше</a>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/arrow.png" alt="" />
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <img src="./assets/arrow.png" alt="" />
+        </div>
+      </div>
+    </div>
     <div class="feedback" id="feedback">
       <div class="feedback_background"></div>
       <div class="container feedback_form">
@@ -169,5 +247,35 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 35,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1440: {
+            slidesPerView: 3
+          }
+        },
+      });
+    </script>
   </body>
 </html>
